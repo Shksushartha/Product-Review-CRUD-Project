@@ -1,0 +1,43 @@
+﻿@page
+@model authentication.Pages.addReviewModel
+@{
+}
+
+<div class="container mt-5">
+    <div class="row justify-container-center align-items-center ">
+        <div>
+            <h1 class="mb-3 ">
+                Add Review
+            </h1>
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label" asp-for="r.reviewerName">
+                        Reviewer Name
+                    </label>
+                    <input asp-for="r.reviewerName" type="text" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="r.star">
+                        Star
+                    </label>
+                    <input asp-for="r.star" type="text" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="r.review">
+                        Review
+                    </label>
+                    <input asp-for="r.review" type="text" class="form-control" />
+                </div>
+                
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>

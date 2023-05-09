@@ -1,0 +1,73 @@
+﻿@page
+@model authentication.Pages.ViewProductsModel
+@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<IdentityUser> SignInManager;
+
+
+
+<h1 class="mb-3">
+    All Available Products
+</h1>
+@if (Model.Products != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Discount</th>
+                <th>Price after discount</th>
+            </tr>
+        </thead>
+
+        @foreach (var items in Model.Products)
+        {
+            <tr>
+                <td>@items.Id</td>
+                <td>@items.name</td>
+                <td>@items.category</td>
+                <td>@items.desc</td>
+                <td>@items.price</td>
+                @if (items.discount == null)
+                {
+                    <td>-</td>
+                }
+                else
+                {
+                    <td>@items.discount</td>
+                }
+
+                @if (items.discount == null)
+                {
+                    <td>@items.price</td>
+                }
+                else
+                {
+                    <td>@items.pAfterD</td>
+                }
+                <td><a class="btn btn-primary" asp-page="/viewReview" asp-page-handler="viewReview"  asp-route-id="@items.Id">View Review</a></td>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                        <td>
+                            <a asp-page-handler="addReview" asp-page="/addReview" asp-route-id="@items.Id" asp-route-name="@items.name" class="btn btn-primary">Add review</a>
+    
+                        </td>
+                    @*<td><a class="btn btn-primary" asp-page="/addReview">Add Review</a></td>*@
+                }
+
+
+            </tr>
+
+
+        }
+
+            </table>
+}
+        else
+        {
+        <p>No products are available at the moment</p>
+        }
+

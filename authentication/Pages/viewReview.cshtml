@@ -1,0 +1,46 @@
+﻿@page
+@model authentication.Pages.viewReviewModel
+@{
+}
+@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<IdentityUser> SignInManager;
+
+
+<h1 class="mb-3">
+    Reviews
+</h1>
+@if (Model.reviews.Count >0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Reviewer Name</th>
+                <th>Star</th>
+                <th>Review</th>
+                
+            </tr>
+        </thead>
+
+        @foreach (var items in Model.reviews)
+        {
+            <tr>
+                <td>@items.Id</td>
+                <td>@items.reviewerName</td>
+                <td>@items.star</td>
+                <td>@items.review</td>
+            </tr>
+
+
+        }
+
+    </table>
+}
+else
+{
+    <p>No reviews yet. Want to add a review? <span> <a asp-page-handler="addReview" asp-page="/addReview" asp-route-id="@Model.Id" class="btn btn-primary">Add review</a></span></p>
+
+}
+
+
+

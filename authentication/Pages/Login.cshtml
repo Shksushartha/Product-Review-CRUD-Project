@@ -1,0 +1,43 @@
+﻿@page
+@model authentication.Pages.LoginModel
+@{
+}
+
+<div class="container mt-5">
+    <div class="row justify-container-center align-items-center ">
+        <div>
+            <h1 class="mb-3 ">
+                Login
+            </h1>
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label" asp-for="login.Email">
+                        Email Address
+                    </label>
+                    <input asp-for="login.Email" type="text" class="form-control" />
+                    <span asp-validation-for="login.Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" asp-for="login.Password">
+                        Password
+                    </label>
+                    <input asp-for="login.Password" type="password" class="form-control"/>
+                    <span asp-validation-for="login.Password" class="text-danger"></span>
+                </div>
+                <div class="mb-3 form-check">
+                    <label class="form-check-label" asp-for="login.RememberMe">
+                        Remember Me
+                    </label>
+                    <input asp-for="login.RememberMe" type="checkbox" value="true" class="form-check-input"/>
+
+                </div>
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+

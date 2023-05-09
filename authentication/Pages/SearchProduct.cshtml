@@ -1,0 +1,47 @@
+﻿@page
+@model authentication.Pages.SearchProductModel
+@using Microsoft.AspNetCore.Identity;
+@inject SignInManager<IdentityUser> SignInManager;
+
+<div class="align-items-center mb-4">
+    <form method="post">
+        <input type="text" asp-for="id" placeholder="Enter Product Id" />
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+</div>
+
+<table class="table">
+    <tr>
+        <th>S.No.</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Discount</th>
+        <th>Price after discount</th>
+    </tr>
+    @if (Model.product != null)
+    {
+        <tr>
+            <td>@Model.product.Id</td>
+            <td>@Model.product.name</td>
+            <td>@Model.product.category</td>
+            <td>@Model.product.desc</td>
+            <td>@Model.product.price</td>
+            <td>@Model.product.discount</td>
+            <td>@Model.product.pAfterD</td>
+            <td><a class="btn btn-primary" asp-page="/viewReview" asp-page-handler="viewReview"  asp-route-id="@Model.id">View Review</a></td>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <td><a asp-page-handler="addReview" asp-page="/addReview" asp-route-id="@Model.product.Id" asp-route-name="@Model.product.name" class="btn btn-primary">add review</a></td>
+            }
+        </tr>
+    }
+</table>
+
+
+
+
+
+
+

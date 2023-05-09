@@ -1,0 +1,54 @@
+﻿@page
+@model authentication.Pages.ProductsModel
+@{
+}
+
+<div class="container mt-5">
+    <div class="row justify-container-center align-items-center ">
+        <div>
+            <h1 class="mb-3 ">
+                Add Product
+            </h1>
+            <form method="post">
+                <div class="mb-3">
+                    <label class="form-label" asp-for="p.name">
+                        Name
+                    </label>
+                    <input asp-for="p.name" type="text" class="form-control" />                    
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="p.price">
+                        Price
+                    </label>
+                    <input asp-for="p.price" type="text" class="form-control" />                   
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label" asp-for="p.category">
+                        Category
+                    </label>
+                    <input asp-for="p.category" type="text" class="form-control" />                   
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" asp-for="p.desc">
+                        Description
+                    </label>
+                    <input asp-for="p.desc" type="text" class="form-control" />                   
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" asp-for="p.discount">
+                        Discount
+                    </label>
+                    <input asp-for="p.discount" type="text" class="form-control" />                   
+                </div>
+                
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
