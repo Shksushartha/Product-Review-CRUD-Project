@@ -29,6 +29,13 @@
                 <td>@items.reviewerName</td>
                 <td>@items.star</td>
                 <td>@items.review</td>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <td>
+                        <a asp-page-handler="deleteReview" asp-page="/deleteReview" asp-route-id="@items.Id" class="btn btn-primary">Delete review</a>
+
+                    </td>                   
+                }
             </tr>
 
 

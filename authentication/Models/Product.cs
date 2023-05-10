@@ -6,6 +6,7 @@ namespace authentication.Models
         public Product()
         {
         }
+
         public int Id { get; set; }
         public string name { get; set; }
         public string category { get; set; }

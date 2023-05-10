@@ -1,47 +1,46 @@
 ﻿<Properties StartupConfiguration="{E3783297-83A7-40FF-B8EB-9FB478A3C9AD}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.authentication PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="authentication/Pages/SearchProduct.cshtml">
+  <MonoDevelop.Ide.ItemProperties.authentication PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="authentication/Pages/Products.cshtml.cs">
     <Files>
-      <File FileName="authentication/Pages/Shared/_Layout.cshtml" />
+      <File FileName="authentication/Pages/Shared/_Layout.cshtml" Line="1" Column="1" />
       <File FileName="authentication/appsettings.json" />
-      <File FileName="authentication/Model/AuthDbContext.cs" Line="1" Column="1" />
+      <File FileName="authentication/Model/AuthDbContext.cs" Line="12" Column="37" />
       <File FileName="authentication/Startup.cs" />
       <File FileName="authentication/Program.cs" />
-      <File FileName="authentication/Pages/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="authentication/Pages/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
       <File FileName="authentication/Pages/Register.cshtml" />
       <File FileName="authentication/Pages/Register.cshtml.cs" />
       <File FileName="authentication/ViewModels/Register.cs" />
-      <File FileName="authentication/Pages/_ViewImports.cshtml" />
+      <File FileName="authentication/Pages/_ViewImports.cshtml" Line="1" Column="1" />
       <File FileName="authentication/Pages/_ViewStart.cshtml" />
       <File FileName="authentication/Pages/Shared/_Layout.cshtml.css" />
       <File FileName="authentication/Pages/Privacy.cshtml" />
       <File FileName="authentication/Pages/Login.cshtml" />
       <File FileName="authentication/Pages/Login.cshtml.cs" />
       <File FileName="authentication/ViewModels/Login.cs" />
-      <File FileName="authentication/Pages/Index.cshtml" Line="9" Column="4" />
+      <File FileName="authentication/Pages/Index.cshtml" />
       <File FileName="authentication/Pages/Index.cshtml.cs" />
-      <File FileName="authentication/Pages/Logout.cshtml" />
-      <File FileName="authentication/Pages/Logout.cshtml.cs" />
+      <File FileName="authentication/Pages/Logout.cshtml" Line="1" Column="1" />
+      <File FileName="authentication/Pages/Logout.cshtml.cs" Line="1" Column="1" />
       <File FileName="authentication/Pages/Privacy.cshtml.cs" />
-      <File FileName="authentication/Models/Product.cs" />
+      <File FileName="authentication/Models/Product.cs" Line="9" Column="1" />
       <File FileName="authentication/Models/Review.cs" />
-      <File FileName="authentication/Pages/Products.cshtml" />
-      <File FileName="authentication/Pages/Products.cshtml.cs" />
-      <File FileName="authentication/Pages/ViewProducts.cshtml" Line="51" Column="125" />
-      <File FileName="authentication/Pages/ViewProducts.cshtml.cs" Line="1" Column="1" />
-      <File FileName="authentication/Pages/addReview.cshtml" Line="1" Column="1" />
-      <File FileName="authentication/Pages/addReview.cshtml.cs" Line="29" Column="1" />
-      <File FileName="authentication/Pages/SearchProduct.cshtml" Line="36" Column="188" />
-      <File FileName="authentication/Pages/SearchProduct.cshtml.cs" Line="31" Column="25" />
+      <File FileName="authentication/Pages/Products.cshtml" Line="1" Column="1" />
+      <File FileName="authentication/Pages/Products.cshtml.cs" Line="1" Column="1" />
+      <File FileName="authentication/Pages/ViewProducts.cshtml" />
+      <File FileName="authentication/Pages/ViewProducts.cshtml.cs" />
+      <File FileName="authentication/Pages/addReview.cshtml" Line="34" Column="1" />
+      <File FileName="authentication/Pages/addReview.cshtml.cs" Line="20" Column="39" />
+      <File FileName="authentication/Pages/SearchProduct.cshtml" />
+      <File FileName="authentication/Pages/SearchProduct.cshtml.cs" />
       <File FileName="authentication/Migrations/AuthDbContextModelSnapshot.cs" />
-      <File FileName="authentication/Pages/viewReview.cshtml" Line="40" Column="2" />
-      <File FileName="authentication/Pages/viewReview.cshtml.cs" Line="31" Column="21" />
+      <File FileName="authentication/Pages/viewReview.cshtml" />
+      <File FileName="authentication/Pages/viewReview.cshtml.cs" />
+      <File FileName="authentication/Pages/deleteReview.cshtml" />
+      <File FileName="authentication/Pages/deleteReview.cshtml.cs" Line="1" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -54,7 +53,12 @@
               <Node name="Pages" expanded="True">
                 <Node name="Shared" expanded="True" />
                 <Node name="addReview.cshtml" expanded="True" />
-                <Node name="SearchProduct.cshtml" expanded="True" selected="True" />
+                <Node name="deleteReview.cshtml" expanded="True" />
+                <Node name="Logout.cshtml" expanded="True" />
+                <Node name="Products.cshtml" expanded="True">
+                  <Node name="Products.cshtml.cs" selected="True" />
+                </Node>
+                <Node name="SearchProduct.cshtml" expanded="True" />
                 <Node name="ViewProducts.cshtml" expanded="True" />
                 <Node name="viewReview.cshtml" expanded="True" />
               </Node>
@@ -66,4 +70,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
